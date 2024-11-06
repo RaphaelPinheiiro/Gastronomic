@@ -1,0 +1,53 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.l-header {
+  display: grid;
+  background-color: var(--clr-neutral-700);
+  min-height: 100vh;
+
+  @include breakPoints("medium") {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
+    background-image: linear-gradient(
+        hsla(0, 0%, 10%, 0.4),
+        hsla(0, 0%, 10%, 1)
+      ),
+      url("/src/images/01.jpg");
+    background-position: top right 40%;
+    background-size: cover;
+  }
+
+  &__title {
+    align-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem(100px);
+    gap: rem(40px);
+  }
+
+  &__paragraph {
+    color: var(--clr-neutral-100);
+    text-align: justify;
+    text-align-last: center;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    width: 100%;
+  }
+
+  &__explorer {
+    display: grid;
+    grid-column: 1 / -1;
+
+    @include breakPoints("medium") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

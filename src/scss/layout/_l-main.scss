@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+@use "../tools" as *;
+
+.l-main {
+  background-color: var(--clr-neutral-700);
+  height: 1080px;
+}

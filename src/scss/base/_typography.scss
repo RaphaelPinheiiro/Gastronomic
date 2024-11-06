@@ -1,0 +1,30 @@
+h1 {
+  font-family: "cormorant";
+  font-weight: normal;
+  font-style: normal;
+  color: var(--clr-neutral-100);
+  padding: 1em;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "garamond";
+  font-weight: bold;
+  font-style: normal;
+  color: var(--clr-neutral-100);
+}
+
+a,
+button {
+  font-family: "infant";
+  font-weight: normal;
+  font-style: normal;
+  color: var(--clr-neutral-100);
+}
+
+p {
+  font-family: "upright";
+  font-weight: normal;
+  font-style: normal;
+}

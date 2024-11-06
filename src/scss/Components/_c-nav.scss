@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.c-nav {
+  display: flex;
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__item {
+    list-style: none;
+    align-content: center;
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: $transition-global;
+
+    &:hover {
+      color: var(--clr-yellows-500);
+    }
+
+    &:active {
+      color: var(--clr-yellows-700);
+    }
+  }
+}

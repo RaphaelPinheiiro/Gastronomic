@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+.c-button {
+  cursor: pointer;
+  background-color: var(--clr-yellows-600);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0.25em 0.75em;
+  font-size: 1.5rem;
+  min-width: 15ch;
+  min-height: 44px;
+  transition: $transition-global;
+
+  &:hover {
+    background-color: var(--clr-oranges-600);
+  }
+
+  &:active {
+    background-color: var(--clr-neutral-700);
+  }
+}
